@@ -201,7 +201,7 @@ const Review = (props) => {
               <div key={review.id} className='card mt-3'>
                 <div className='card-body'>
                   <strong>{`${review.user.firstName} ${review.user.lastName}`}</strong>
-                  <div>{formatISTDateTime(review.user.createdAt)}</div>
+                  <div>{formatISTDateTime(review.createdAt)}</div>
                   <StarRatings
                     rating={review.rating}
                     starRatedColor='gold'
