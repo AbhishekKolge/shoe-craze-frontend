@@ -119,8 +119,8 @@ const Review = (props) => {
       id: review.id,
       enable: true,
     });
-    formik.setFieldValue('rating', review.rating);
-    formik.setFieldValue('comment', review.comment);
+    review.rating && formik.setFieldValue('rating', review.rating);
+    review.comment && formik.setFieldValue('comment', review.comment);
   };
 
   const ratingHandler = (e) => {
