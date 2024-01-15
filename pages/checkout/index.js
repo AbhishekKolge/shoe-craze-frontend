@@ -89,7 +89,7 @@ const CheckoutPage = () => {
             key: key,
             amount: order.amount,
             currency: order.currency,
-            name: process.env.NEXT_PUBLIC_RAZORPAY_NAME,
+            name: process.env.RAZORPAY_NAME,
             order_id: order.id,
             handler: function (response) {
               const details = {
